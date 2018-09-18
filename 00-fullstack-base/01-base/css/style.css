@@ -17,59 +17,74 @@ img {
 }
 
 /* FONTS */
-h1 {
+
+h1{
+    text-align: center;
+
+}
+
+h2 {
     text-align: right; /* define o alinhamento do texto */
     font-size: 35px; /* define o tamanho da fonte. Unidades possíveis são px, em, rem, entre outros */
     text-transform: uppercase; /*define alguma mudança na própria fonte. Valores possíveis: lowercase, uppercase, capitalize */
 }
 
-h2 {
+h3 {
     text-align: right;
 }
 
-p {
+.conteudo p {
     width: 430px;
     margin-bottom: 110px;
     text-align: right;  
 }
 
 /* UTILITIES */
-.u-margin-small {
-    margin: 5px;
-}
 
-.sobre-conteudo {
+
+.conteudo {
     width: 45%;
     display: inline-block;
+
 }
 
-.sobre-imagem {
+.celular {
     width: 45%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-sobre {
+
+
+.sobre {
    width: 960px;
    margin: 0 auto; /* macete para deixar elementos block centralizados */
    margin-top: 100px;
+   display: flex;
 }
 
-.sobre-conteudo__botoes {
-    text-align: right; /* esse tipo de alinhamento para botões não funciona se for colocado diretamente no elemento <a>. Deve-se colocar essa propriedade no elemento mãe */
+.botoes {
+    text-align: right; 
 }
 
-.btn {
+
+
+.botao1 {
     padding: 10px 12px;
     font-size: 16px;
-}
-
-.a {
     background-color: #5d1277;
     color: white; /* define a cor do conteúdo do elemento */
+    cursor: pointer;
 }
 
-.b {
+.botao2 {
+    padding: 10px 12px;
+    font-size: 16px;
     color: #5d1277;
     border: 1px solid #5d1277; /* cria uma borda no elemento. Ordem de valores: grossura-da-borda tipo-da-borda cor-da-borda. */
+    margin: 5px;
+    cursor: pointer;
 }
 
